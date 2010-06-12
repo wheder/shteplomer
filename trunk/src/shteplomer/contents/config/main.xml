@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+  <kcfgfile name=""/>
+  <group name="General">
+    <entry name="updateIntervalConf" type="Int">
+      <label>The interval (in minutes) in which the temperature will be updated.</label>
+      <default>3</default>
+      <min>1</min>
+      <max>60</max>
+    </entry>
+    <entry name="showFont" type="Font">
+      <label>The font used to display the contents of books.</label>
+      <default>KGlobalSettings::generalFont()</default>
+    </entry>
+  </group>
+</kcfg>

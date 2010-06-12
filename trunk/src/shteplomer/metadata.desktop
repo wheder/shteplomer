@@ -1,0 +1,22 @@
+[Desktop Entry]
+Name=SH Teplomer
+Comment=Widget for showing current temperature on SH
+Icon=kweather
+ 
+Type=Service
+X-KDE-ServiceTypes=Plasma/Applet
+ 
+X-Plasma-API=javascript
+X-Plasma-MainScript=code/main.js
+X-Plasma-DefaultSize=200,100
+ 
+X-KDE-PluginInfo-Author=wheder
+X-KDE-PluginInfo-Email=wheder@gmail.com
+X-KDE-PluginInfo-Name=shteplomer
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Website=http://code.google.com/p/shteplomer/
+X-KDE-PluginInfo-Category=Environment and Weather
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=New BSD License
+X-KDE-PluginInfo-EnabledByDefault=true
+X-Plasma-RequiredExtensions=HTTP
