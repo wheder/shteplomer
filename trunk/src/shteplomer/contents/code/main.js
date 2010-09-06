@@ -26,7 +26,7 @@ function read_config() {
 
 function get_temperature() {
     var tmp = "";
-    var getJob = plasmoid.getUrl("http://pocasi.siliconhill.cz/weather/");
+    var getJob = plasmoid.getUrl("http://weather.sh.cvut.cz/export/teplota.php");
     getJob.data.connect(recv);
     getJob.finished.connect(fini);
     var timedOut = 0;
@@ -43,7 +43,7 @@ function get_temperature() {
         if (!timedOut) {
             timeOut.stop();
             //var re = new RegExp(/Aktualni teplota :(.*)(.)<\/h1>(.*)/)
-            var re = new RegExp(/<b>(.*) C<\/b>/)
+            var re = new RegExp(/(.*)/)
             var teplota = re.exec(tmp);
             ulabel.text = teplota[1]
             //print(teplota)
